@@ -72,17 +72,17 @@ loteca/
    ```bash
    git clone https://github.com/couto-diego/loteca.git
    cd loteca
-Instale as dependências do front-end:
+2. Instale as dependências do front-end:
 
     ```bash
 
-npm install
-Inicie o front-end:
+    npm install
+3. Inicie o front-end:
 
     ```bash
     
-npm start
-Acesse a aplicação:
+    npm start
+4. Acesse a aplicação:
 
 Abra o navegador e visite http://localhost:3000.
 
@@ -95,17 +95,17 @@ Crie uma branch com sua feature ou correção:
 
     ```bash
 
-git checkout -b minha-feature
+    git checkout -b minha-feature
 Faça commit das suas alterações:
 
     ```bash
 
-git commit -m "Minha nova feature"
+    git commit -m "Minha nova feature"
 Envie para o repositório remoto:
 
     ```bash
 
-git push origin minha-feature
+    git push origin minha-feature
 Abra um pull request no GitHub.
 
 ## 👨‍💻 Autor e Contato
