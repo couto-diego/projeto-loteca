@@ -1,0 +1,185 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background-color: #f8f8f8; /* Offwhite */
+}
+
+/* Container principal */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; /* Esconde qualquer parte que ultrapasse a tela */
+}
+
+/* Criando o efeito de elipse */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Metade da tela */
+  height: 100%; /* Altura total */
+  background-color: #4CAF50; /* Verde similar ao da imagem */
+  clip-path: ellipse(60% 100% at 0% 50%); /* Define a forma elíptica */
+  z-index: -1; /* Mantém o efeito no fundo */
+}
+
+/* Cabeçalho */
+.header {
+  color: #2c3e50; /* Cor do texto */
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Select (combobox) */
+.select {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+/* Cartão de loteria */
+.lottery-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo com opacidade */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leve sombra */
+  max-width: 800px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Números sorteados */
+.lottery-numbers {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lottery-numbers h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.numbers span {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Informações do concurso */
+.lottery-info {
+  text-align: center;
+}
+
+.lottery-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lottery-info p {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.lottery-info .premiacao {
+  margin-top: 20px;
+}
+
+.lottery-info .premiacao h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.lottery-info .premio-item {
+  background-color: rgba(248, 249, 250, 0.9); /* Fundo com opacidade */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Cores de fundo para cada tipo de loteria */
+.home.megasena::before {
+  background-color: #e0f7fa; /* Azul pastel */
+}
+
+.home.quina::before {
+  background-color: #c8e6c9; /* Verde pastel */
+}
+
+.home.lotofacil::before {
+  background-color: #fff9c4; /* Amarelo pastel */
+}
+
+.home.lotomania::before {
+  background-color: #ffccbc; /* Laranja pastel */
+}
+
+.home.timemania::before {
+  background-color: #b2dfdb; /* Turquesa pastel */
+}
+
+.home.diadesorte::before {
+  background-color: #ffcdd2; /* Rosa pastel */
+}
+
+/* Rodapé */
+.footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo com opacidade */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #2c3e50;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra no topo */
+  opacity: 50%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-links {
+  margin-top: 5px;
+}
+
+.social-links a {
+  color: #2c3e50;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #3498db; /* Cor ao passar o mouse */
+}
