@@ -8,7 +8,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://couto-diego.github.io/loteca/",
+  "homepage": "https://couto-diego.github.io/projeto-loteca",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
