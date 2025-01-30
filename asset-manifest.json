@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/loteca/static/css/main.e6bb5557.css",
+    "main.js": "/loteca/static/js/main.692691f8.js",
+    "index.html": "/loteca/index.html",
+    "main.e6bb5557.css.map": "/loteca/static/css/main.e6bb5557.css.map",
+    "main.692691f8.js.map": "/loteca/static/js/main.692691f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6bb5557.css",
+    "static/js/main.692691f8.js"
+  ]
+}
